@@ -1,0 +1,97 @@
+/*alternate sections la coloue vara*/
+section:nth-child(2n){
+    background-color:rgb(196, 225, 255);
+}
+
+/*section container ku padding*/
+section[class^="container"]{
+    padding: 4rem 2rem;
+}
+
+@media screen and (min-width: 1024px){
+    section[class^="container"]{
+        padding: 4rem;
+    } 
+    nav [class^="container"]{
+        padding:0 4rem;
+    } 
+}
+/*navigation header mela irukkurathu*/
+.navbar-nav .nav-link{
+color: #ffffff;
+font-size: 1.1rem;
+}
+.navbar-toggler-icon{
+    color:#ffffff;
+}
+.navbar {
+    font-family:'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+    background-color:black;
+}
+body{
+    font-family:'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+}
+@media screen and (min-width:1024px){
+    .navbar-nav .nav-item{
+        padding: 0 1rem;
+        color: #ffffff;
+    }
+}
+
+/*mypic section*/
+section.mypic{
+    background-color:rgb(196, 225, 255);
+    padding-top: 72px;
+    padding-bottom: 12px;
+}
+@media screen and (min-width: 576px){
+    section.mypic{
+        text-align: center;
+    }
+    section.mypic img{
+        width: 70%;
+    }
+}
+/*about section*/
+@media screen and (min-width: 1024px){
+section.about .container{
+    text-align: center;
+    width: 60%;
+}
+}
+
+/*project*/
+@media screen and (min-width: 1024px){ /*ithu not necessary but irunthaalum thappu illa*/
+    section.project .container{
+        text-align: center;
+        width: 60%;
+    }
+    }
+section.project .card{
+    max-width: 17rem;
+    text-align: justify;
+    margin-inline: auto;
+}
+section.project .card img{
+    max-width: 70%;
+    margin: 1rem auto;
+}
+
+section .btn-outline-dark{
+    border: 2px solid black;
+    box-shadow: 4px 4px black;
+}
+.btn-outline-dark:hover{
+    box-shadow: 4px 4px grey;
+}
+
+/*styling anchor tag*/
+a{
+    color: black;
+    text-decoration: none;
+
+}
+/*centre align pannurom 1st thavara remaining sections*/
+section:not(:first-of-type){
+    text-align: center;
+}
